@@ -1,8 +1,6 @@
 const mainDiv = document.querySelector('.wrapper');
-
 const div = document.createElement('div');
-      div.style.cssText = 'display: flex; flex-wrap: wrap; max-width: 700px; max-height: auto; margin-top: 20px; overflow: hidden; border: 2px solid black; ';
-
+      div.style.cssText = 'border: 1px solid black; width: 704px; height: 724px; margin-top: 20px; border-radius: 5px;'
       mainDiv.appendChild(div);
 
 const black = document.querySelector('#default');
@@ -18,8 +16,10 @@ const color = () => {
 
 function defaults () {
    div.replaceChildren();
-   
+
    for (let i = 0; i<256; i++) {
+      div.style.cssText = 'display: flex; flex-wrap: wrap; max-width: 700px; max-height: auto; margin-top: 20px; overflow: hidden; border: 2px solid black; ';
+
       const grid = document.createElement('div');
       div.appendChild(grid);
       grid.style.cssText = 'height: 43px; width: 41.5px; border: 1px solid white;'
@@ -56,6 +56,7 @@ function newGrid () {
    for (let i = 0; i<1024; i++) {
       const grid = document.createElement('div');
       let newWrap = div;
+      div.style.cssText = 'display: flex; flex-wrap: wrap; max-width: 700px; max-height: auto; margin-top: 20px; overflow: hidden; border: 2px solid black; ';
 
       newWrap.appendChild(grid);
       grid.style.cssText = 'height: 20px; width: 19.8px; border: 1px solid white;'

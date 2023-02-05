@@ -2,6 +2,10 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.wrapper {
+    
+}
+
 .flex-wrapper {
     display: flex;
     justify-content: center;
@@ -13,7 +17,7 @@ h1 {
 }
 
 .flex-wrapper > button {
-    font-size: 25px;
+    font-size: 20px;
     background: rgb(109, 94, 94);
     border-radius: 15px;
     flex-basis: 200px;

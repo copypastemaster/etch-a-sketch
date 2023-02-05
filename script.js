@@ -27,7 +27,7 @@ function defaults () {
 
       black.addEventListener('click', () => {
          grid.addEventListener('mouseover', () => {
-            grid.style.cssText = 'background-color: black; height: 43px; width: 41.5px; border: 1px solid white;';
+            grid.style.cssText = 'background-color: black; height: 43px; width: 41.5px; border: 1px solid white; transition: 0.2s;';
          })
       })
 
@@ -44,7 +44,7 @@ function defaults () {
       
       rgb.addEventListener('click', () => {
          grid.addEventListener('mouseover', () => {
-            grid.style.cssText = `background-color: ${color()};height: 43px; width: 41.5px; border: 1px solid white;`
+            grid.style.cssText = `background-color: ${color()};height: 43px; width: 41.5px; border: 1px solid white; transition: 0.2s;`
             
          })
       })
@@ -59,7 +59,7 @@ function newGrid () {
 
       black.addEventListener('click', () => {
          grid.addEventListener('mouseover', () => {
-            grid.style.cssText = 'background-color: black; height: 20px; width: 19.8px; border: 1px solid white;';
+            grid.style.cssText = 'background-color: black; height: 20px; width: 19.8px; border: 1px solid white; transition: 0.2s;';
          })
       })
 
@@ -76,7 +76,7 @@ function newGrid () {
 
       rgb.addEventListener('click', () => {
          grid.addEventListener('mouseover', () => {
-            grid.style.cssText = `background-color: ${color()};height: 20px; width: 19.8px; border: 1px solid white;`
+            grid.style.cssText = `background-color: ${color()};height: 20px; width: 19.8px; border: 1px solid white; transition: 0.2s;`
             
          })
       })

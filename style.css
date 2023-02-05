@@ -1,3 +1,26 @@
-.box {
-    background-color: black;
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.flex-wrapper > button {
+    font-size: 25px;
+    background: rgb(109, 94, 94);
+    border-radius: 15px;
+    flex-basis: 200px;
+    color: rgb(223, 230, 229);
+}
+
+.flex-wrapper > button:hover {
+    background-color: rgb(7, 7, 44);
+    transition: 0.2s;
 }
